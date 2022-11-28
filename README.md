@@ -9,8 +9,7 @@ $ make install
 $ source venv/bin/activate
 ```
 ## Overview
-`refact` is a novel command line tool for discovering where class methods have been duplicated, copy/pasted or have deivated from other versions. The point of this would be to refactor redundant class methods into shared code as mixins, singletons or other patterns.
-
+`refact` is a novel command line tool for discovering where class methods have been duplicated, copy/pasted or have deivated from other versions. The point of this would be to refactor redundant (or similar) class methods into shared code as mixins, singletons.
 ## Usage
 
 ```bash
@@ -39,7 +38,6 @@ Options:
 (venv) $ 
 
 ```
-
 
 
 Finding method definitions and usage calls within modules and compare the max and min differences among them.
