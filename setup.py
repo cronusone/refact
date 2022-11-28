@@ -128,7 +128,9 @@ setup(
         'click',
         'black',
         'isort',
-        'flake8'
+        'flake8',
+        'termcolor',
+        'Levenshtein'
     ],
     license=about['__license__'],
     zip_safe=False,
