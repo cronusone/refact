@@ -9,7 +9,12 @@ $ make install
 $ source venv/bin/activate
 ```
 ## Overview
-`refact` is a novel command line tool for discovering where class methods have been duplicated, copy/pasted or have deivated from other versions. The point of this would be to refactor redundant (or similar) class methods into shared code as mixins, singletons.
+`refact` is a novel command line tool for discovering where class methods have been duplicated, copy/pasted or have deviated from other versions. The point of this would be to refactor redundant (or similar) class methods into shared code as mixins, singletons.
+
+It calculates Levenshtein edit distance[1] between two method code blocks and reports that in the tables below as "Distance". A distance of 0 means zero edits are required to make two methods equal and thus they are already identical.
+
+[1] https://pypi.org/project/python-Levenshtein/
+
 ## Usage
 
 ```bash
